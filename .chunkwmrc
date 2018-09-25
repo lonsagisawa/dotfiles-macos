@@ -129,8 +129,10 @@ chunkc core::load ffm.so
 # NOTE: sample rules for the tiling plugin
 #
 
-chunkc tiling::rule --owner Finder --name Copy --state float &
+chunkc tiling::rule --owner Finder --name コピー --state float &
 chunkc tiling::rule --owner \"App Store\" --state float &
 chunkc tiling::rule --owner Emacs --except "^$" --state tile &
+chunkc tiling::rule --owner mpv --state float &
+chunkc tiling::rule --owner \"The Unarchiver\" --state float &
 
 chunkc set mouse_resize_window            alt ctrl
